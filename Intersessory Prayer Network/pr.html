@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Prayer Request Board</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+    />
+    <link rel="stylesheet" href="pr.css" />
+  </head>
+  <body>
+    <!-- navbar -->
+    <div class="nav-bar">
+      <div class="logo"><a href="home.html">IPN</a></div>
+
+      <div class="sitemap">
+        <ul id="nav">
+          <li><a href="home.html">Home</a></li>
+          <li><a href="pr.html" class="selected">PR Board</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="profile.html">Profile</a></li>
+        </ul>
+      </div>
+
+      <div class="pref">
+        <button class="nav-toggle">
+          <i class="fas fa-bars"></i>
+          <i class="fas fa-cross"></i>
+        </button>
+        <a href="login.html" class="login-btn">Login </a>
+        <a href="#" class="logout-btn" style="display: none">Logout</a>
+        <a href="message.html" class="logo-btn">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="1em"
+            height="1em"
+            viewBox="0 0 16 16"
+          >
+            <path
+              fill="currentColor"
+              d="M0 4a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2zm2-1a1 1 0 0 0-1 1v.217l7 4.2l7-4.2V4a1 1 0 0 0-1-1zm13 2.383l-4.708 2.825L15 11.105zm-.034 6.876l-5.64-3.471L8 9.583l-1.326-.795l-5.64 3.47A1 1 0 0 0 2 13h12a1 1 0 0 0 .966-.741M1 11.105l4.708-2.897L1 5.383z"
+            />
+          </svg>
+        </a>
+      </div>
+    </div>
+    <h1>Prayer Requests</h1>
+    <p class="scripture">
+      "For this reason I am telling you, whatever you ask for in prayer, believe
+      (trust and be confident) that it is granted to you, and you will [get
+      it]." Mark 11 (ampc)
+    </p>
+    <fieldset class="pr-board">
+      <div class="sticky">
+        <span class="name">Joshua</span>
+
+        <p class="sticky-prayer">Pray for us, we are entering the land. ⚔️</p>
+        <button class="grab-prayer">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="1em"
+            height="1em"
+            viewBox="0 0 16 16"
+          >
+            <path
+              fill="currentColor"
+              d="M3.085 2A1.5 1.5 0 0 1 4.5 1h2a1.5 1.5 0 0 1 1.415 1H8a2 2 0 0 1 2 2v2.31c.169-.034.36-.06.563-.06c.352 0 .762.079 1.13.346c.371.27.645.694.792 1.283a.5.5 0 0 1-.288.58a8.04 8.04 0 0 0-3.62 3.033C8.047 12.311 7.138 13 6.057 13H4.236A2.5 2.5 0 0 1 2 11.618l-.63-1.26A3.5 3.5 0 0 1 1 8.791V4a2 2 0 0 1 2-2zM5 2h-.5a.5.5 0 0 0-.5.5v4a.5.5 0 1 1-1 0V3a1 1 0 0 0-1 1v4.792c0 .388.09.77.264 1.118l.63 1.26a1.5 1.5 0 0 0 1.342.83h1.822c.642 0 1.273-.422 1.678-1.05a9.014 9.014 0 0 1 3.64-3.214a.914.914 0 0 0-.272-.332a.899.899 0 0 0-.541-.154c-.212 0-.424.048-.59.101a2.326 2.326 0 0 0-.24.092l-.01.004l-.001.001A.5.5 0 0 1 9 7V4a1 1 0 0 0-1-1v3.5a.5.5 0 0 1-1 0v-4a.5.5 0 0 0-.5-.5H6v4.5a.5.5 0 0 1-1 0zm6 14a4.994 4.994 0 0 1-4.078-2.106a3.77 3.77 0 0 0 .96-.388a4 4 0 1 0 5.613-5.633a1.503 1.503 0 0 0-.04-.237a3.494 3.494 0 0 0-.592-1.277A5.002 5.002 0 0 1 11 16m2.5-5.25a.75.75 0 1 1-1.5 0a.75.75 0 0 1 1.5 0m-.553 1.974a.5.5 0 1 0-.894-.448c-.124.247-.372.432-.696.558c-.322.125-.66.166-.857.166a.5.5 0 0 0 0 1a3.55 3.55 0 0 0 1.218-.234c.45-.174.953-.49 1.23-1.042"
+            />
+          </svg>
+        </button>
+      </div>
+      <div class="sticky">
+        <span class="name">Menilik</span>
+
+        <p class="sticky-prayer">Pray for strength in our new decision.</p>
+        <button class="grab-prayer">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="1em"
+            height="1em"
+            viewBox="0 0 16 16"
+          >
+            <path
+              fill="currentColor"
+              d="M3.085 2A1.5 1.5 0 0 1 4.5 1h2a1.5 1.5 0 0 1 1.415 1H8a2 2 0 0 1 2 2v2.31c.169-.034.36-.06.563-.06c.352 0 .762.079 1.13.346c.371.27.645.694.792 1.283a.5.5 0 0 1-.288.58a8.04 8.04 0 0 0-3.62 3.033C8.047 12.311 7.138 13 6.057 13H4.236A2.5 2.5 0 0 1 2 11.618l-.63-1.26A3.5 3.5 0 0 1 1 8.791V4a2 2 0 0 1 2-2zM5 2h-.5a.5.5 0 0 0-.5.5v4a.5.5 0 1 1-1 0V3a1 1 0 0 0-1 1v4.792c0 .388.09.77.264 1.118l.63 1.26a1.5 1.5 0 0 0 1.342.83h1.822c.642 0 1.273-.422 1.678-1.05a9.014 9.014 0 0 1 3.64-3.214a.914.914 0 0 0-.272-.332a.899.899 0 0 0-.541-.154c-.212 0-.424.048-.59.101a2.326 2.326 0 0 0-.24.092l-.01.004l-.001.001A.5.5 0 0 1 9 7V4a1 1 0 0 0-1-1v3.5a.5.5 0 0 1-1 0v-4a.5.5 0 0 0-.5-.5H6v4.5a.5.5 0 0 1-1 0zm6 14a4.994 4.994 0 0 1-4.078-2.106a3.77 3.77 0 0 0 .96-.388a4 4 0 1 0 5.613-5.633a1.503 1.503 0 0 0-.04-.237a3.494 3.494 0 0 0-.592-1.277A5.002 5.002 0 0 1 11 16m2.5-5.25a.75.75 0 1 1-1.5 0a.75.75 0 0 1 1.5 0m-.553 1.974a.5.5 0 1 0-.894-.448c-.124.247-.372.432-.696.558c-.322.125-.66.166-.857.166a.5.5 0 0 0 0 1a3.55 3.55 0 0 0 1.218-.234c.45-.174.953-.49 1.23-1.042"
+            />
+          </svg>
+        </button>
+      </div>
+    </fieldset>
+    <div class="add">
+      <input type="name" placeholder="Name" id="name" />
+      <textarea
+        name="add-prayer"
+        id=""
+        cols="30"
+        rows="10"
+        placeholder="Add a prayer request"
+        class="text"
+      ></textarea>
+      <button class="submit">Pray</button>
+    </div>
+    <footer id="footer">copyright 2023</footer>
+    <script src="pr.js"></script>
+  </body>
+</html>

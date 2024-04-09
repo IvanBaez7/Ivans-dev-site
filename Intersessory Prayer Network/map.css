@@ -1,0 +1,71 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+}
+#map {
+  width: 100vw;
+  height: 100vh;
+}
+.continent-label {
+  font-size: 14px;
+  font-weight: bold;
+  color: #fff;
+  text-shadow: 1px 1px 2px #000;
+
+  padding: 5px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+.continent-label:hover {
+  color: #fad20bbc;
+}
+.popup-content {
+  padding: 10px;
+  max-width: 250px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+#map-img {
+  height: 80px;
+  width: 80px;
+  border-radius: 50%;
+  margin-bottom: 10px;
+}
+.name {
+  font-weight: bold;
+}
+textarea {
+  width: 100%;
+  height: 80px;
+  resize: none;
+  margin-bottom: 10px;
+  border-radius: 5px;
+  align-items: center;
+}
+
+p.NA-data,
+p.SA-data,
+p.E-data,
+p.ME-data,
+p.A-data,
+p.AS-data,
+p.R-data,
+p.O-data {
+  margin: 5px 0;
+}
+
+.praying-hands,
+.send {
+  background-color: #065c9291;
+  color: #fff;
+  border: none;
+  padding: 5px 10px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+.praying-hands:hover,
+.send:hover {
+  background-color: #fad20bbc;
+}

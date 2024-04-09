@@ -1,0 +1,56 @@
+body,
+html {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  background-color: #fff;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.tag {
+  display: flex;
+  text-decoration: none;
+  color: rgb(2, 85, 218);
+}
+
+.tag:hover {
+  color: rgba(254, 3, 3, 0.904);
+}
+
+.open-tag,
+.closing-tag {
+  font-size: 7rem;
+}
+
+.tag-left,
+.tag-right {
+  flex-grow: 1;
+  display: flex;
+  justify-content: center;
+  transition: transform 0.5s;
+  text-shadow: 0px 10px 5px rgba(0, 221, 255, 0.994);
+}
+
+.tag-left {
+  transform: translateX(0);
+  transition: transform 1s ease; /* Adjust the duration and easing as needed */
+}
+
+.tag-right {
+  transform: translateX(0);
+  transition: transform 1s ease; /* Adjust the duration and easing as needed */
+}
+
+.move-left {
+  transform: translateX(-500%);
+}
+
+.move-right {
+  transform: translateX(500%);
+}

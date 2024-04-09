@@ -1,0 +1,11 @@
+# Ignore config.prod.js and weather.prod.js files
+/Intersessory Prayer Network/config.prod.js
+/weatherapp/weather.prod.js
+
+# Ignore specific files in the root directory
+/config.prod.js
+/weather.prod.js
+
+# Ignore files with absolute paths
+Ivans dev site/Intersessory Prayer Network/config.prod.js
+Ivans dev site/weatherapp/weather.prod.js

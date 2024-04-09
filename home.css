@@ -1,0 +1,259 @@
+/* rgb(2, 85, 218); text blue */
+/* background-color: #fff; background color */
+/* text-shadow: 0px 10px 5px rgba(0, 221, 255, 0.994); */
+:root {
+  --blue-text: rgb(2, 85, 218);
+  --text-shadow: 0 10px 5px rgba(0, 221, 255, 0.994);
+  --dark-shadow: 0 10px 15px rgba(0, 61, 141, 0.994);
+  --light-shadow: 0 10px 15px rgba(9, 203, 251, 0.933);
+  --transition: all 0.3s linear;
+}
+
+*,
+::after,
+::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: monospace;
+  background: #fff;
+  line-height: 1.7;
+}
+
+ul {
+  list-style-type: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+h1,
+h2,
+p {
+  margin-bottom: 1rem;
+  line-height: 1.5;
+}
+
+/* ====****** sidebar ******===== */
+/* =====******       *******===== */
+.sidebar-toggle {
+  position: fixed;
+  top: 2rem;
+  right: 3rem;
+  font-size: 1.75rem;
+  background: transparent;
+  border-color: transparent;
+  color: var(--blue-text);
+  transition: var(--transition);
+  cursor: pointer;
+  animation: bounce 3s ease-in-out infinite;
+  text-shadow: var(--dark-shadow);
+}
+
+.sidebar-toggle:hover {
+  color: rgba(0, 221, 255, 0.994);
+}
+
+@keyframes bounce {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.5);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+.sidebar-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 1.5rem;
+}
+
+.close-btn {
+  font-size: 1.75rem;
+  background: none;
+  border: none;
+  color: rgb(163, 0, 0);
+  text-shadow: 0 10px 15px rgba(251, 118, 9, 0.933);
+  transition: var(--transition);
+  cursor: pointer;
+}
+
+.close-btn:hover {
+  color: rgba(254, 3, 3, 0.904);
+  transform: rotate(360deg);
+}
+
+.header-logo {
+  justify-self: center;
+  font-size: 2rem;
+  text-shadow: var(--light-shadow);
+}
+
+.links a {
+  display: block;
+  font-size: 1.5rem;
+  padding: 1rem 1.5rem;
+  color: black;
+  text-shadow: var(--dark-shadow);
+  transition: var(--transition);
+}
+
+.links a:hover {
+  background: #8bd4fb7d;
+  color: var(--blue-text);
+  padding-left: 1.75rem;
+}
+
+.social-icons {
+  justify-content: center;
+  display: flex;
+  padding-bottom: 2rem;
+}
+
+.social-icons a {
+  font-size: 1.75rem;
+  margin: 0 0.5rem;
+  color: black;
+  transition: var(--transition);
+}
+
+.social-icons a:hover {
+  color: var(--blue-text);
+}
+
+.sidebar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: #fff;
+  display: grid;
+  grid-template-rows: auto 1fr auto;
+  row-gap: 1rem;
+  box-shadow: none;
+  transition: var(--transition);
+  transform: translate(-100%);
+}
+
+.show-sidebar {
+  transform: translate(0);
+}
+
+@media screen and (min-width: 676px) {
+  .sidebar {
+    width: 400px;
+  }
+}
+
+/* ====****** projects ******===== */
+/* =====******       *******===== */
+
+/* h2 {
+  margin-top: 40px;
+} */
+
+h2,
+h3 {
+  font-size: 2rem;
+  justify-content: center;
+  text-align: center;
+  text-shadow: 0 3px 3px rgba(9, 203, 251, 0.495);
+  margin: 5rem 2rem;
+}
+
+.topic {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+  font-size: 18px;
+  line-height: 2;
+  color: black;
+  /* margin-bottom: 17px; */
+}
+
+/* p {
+  display: block;
+  justify-content: center;
+  text-align: left;
+  padding-left: 10rem;
+  padding-right: 10rem;
+  line-height: 4rem;
+} */
+
+p a {
+  color: black;
+}
+
+p a:hover {
+  color: var(--blue-text);
+  text-decoration: underline;
+}
+
+.header {
+  font-size: 1.5rem;
+  text-align: center;
+  border-bottom: 3px solid rgba(9, 203, 251, 0.495);
+  margin: 4rem 2rem;
+  display: flex; /* Use flexbox for centering */
+  justify-content: center; /* Horizontally center */
+  align-items: center; /* Vertically center */
+}
+
+iframe {
+  border: 40px solid rgba(9, 203, 251, 0.495);
+  border-radius: 30px;
+  margin-top: 50px;
+  width: 100vw;
+}
+
+.Project-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 60px;
+  padding: 6rem 4rem;
+  list-style: none;
+}
+
+.Project-grid li {
+  text-align: center;
+  font-size: 1.5rem;
+}
+
+.Project-grid li img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 30px;
+}
+
+.Project-grid li a,
+.Project-grid li p {
+  color: black; /* Change text color */
+}
+
+footer {
+  height: 40px;
+  font-size: 1rem;
+  background-color: rgba(9, 203, 251, 0.495);
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.intro {
+  text-align: center;
+}
