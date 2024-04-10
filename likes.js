@@ -47,8 +47,8 @@ window.addEventListener('scroll', function () {
   }
 });
 
-// Function to make YouTube videos enter fullscreen mode
-function enableFullscreen(element) {
+// Function to request fullscreen mode for a given element
+function requestFullscreen(element) {
   if (element.requestFullscreen) {
     element.requestFullscreen();
   } else if (element.mozRequestFullScreen) {
@@ -63,8 +63,10 @@ function enableFullscreen(element) {
 // Add event listeners to all YouTube iframes
 const youtubeVideos = document.querySelectorAll('iframe[src*="youtube.com"]');
 youtubeVideos.forEach((video) => {
-  video.addEventListener('click', () => {
-    enableFullscreen(video);
+  // Add a 'play' event listener to each iframe
+  video.addEventListener('play', () => {
+    // When the video starts playing, request fullscreen for the video's parent element
+    requestFullscreen(video.parentNode); // This assumes the iframe's parent is the container
   });
 });
 
