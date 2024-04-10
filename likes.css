@@ -209,45 +209,48 @@ h1 {
 
 @media (max-width: 600px) {
   h1 {
-    font-size: 1.5rem; /* Reduce heading font size */
+    font-size: 1.5rem;
     margin-top: 3rem;
     margin-bottom: 30px;
   }
 
   .theme {
-    font-size: 12px; /* Reduce theme font size */
+    font-size: 12px;
     margin-top: 30px;
     margin-bottom: 20px;
   }
 
   .item {
-    margin: 10px; /* Adjust margin between items for smaller screens */
+    margin: 10px;
   }
 
   .item img {
-    width: 100%; /* Make images responsive within their container */
+    width: 100%;
     height: auto;
   }
 
   .item p {
-    font-size: 14px; /* Reduce text font size */
+    font-size: 14px;
     margin-top: 5px;
   }
 
   .likes {
-    padding: 0 10px; /* Reduce padding for content area */
+    padding: 0 10px;
     margin-bottom: 80px;
   }
 
   .likes p {
-    font-size: 1rem; /* Reduce paragraph font size */
+    font-size: 1rem;
     line-height: 1.6;
     margin-bottom: 20px;
   }
 
   .likes iframe {
-    margin-top: 30px; /* Adjust margin for iframes */
+    margin-top: 30px;
     margin-bottom: 50px;
+    width: 100%;
+    max-width: 100%;
+    height: auto;
   }
 }
 
