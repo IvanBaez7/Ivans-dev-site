@@ -47,29 +47,6 @@ window.addEventListener('scroll', function () {
   }
 });
 
-// Function to request fullscreen mode for a given element
-function requestFullscreen(element) {
-  if (element.requestFullscreen) {
-    element.requestFullscreen();
-  } else if (element.mozRequestFullScreen) {
-    element.mozRequestFullScreen();
-  } else if (element.webkitRequestFullscreen) {
-    element.webkitRequestFullscreen();
-  } else if (element.msRequestFullscreen) {
-    element.msRequestFullscreen();
-  }
-}
-
-// Add event listeners to all YouTube iframes
-const youtubeVideos = document.querySelectorAll('iframe[src*="youtube.com"]');
-youtubeVideos.forEach((video) => {
-  // Add a 'play' event listener to each iframe
-  video.addEventListener('play', () => {
-    // When the video starts playing, request fullscreen for the video's parent element
-    requestFullscreen(video.parentNode); // This assumes the iframe's parent is the container
-  });
-});
-
 // Get year for footer
 // Get the current year
 var currentYear = new Date().getFullYear();
