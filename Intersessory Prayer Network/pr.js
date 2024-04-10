@@ -233,9 +233,9 @@ submitButton.addEventListener('click', function (event) {
 
   // Set a random position for the sticky note within the .pr-board element
   const randomX = Math.random() * (boardWidth - 200);
-  note;
+
   const randomY = Math.random() * (boardHeight - 200);
-  note;
+
   newSticky.style.left = randomX + 'px';
   newSticky.style.top = randomY + 'px';
 
