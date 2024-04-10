@@ -209,11 +209,15 @@ p a:hover {
   align-items: center; /* Vertically center */
 }
 
-iframe {
-  border: 40px solid rgba(9, 203, 251, 0.495);
-  border-radius: 30px;
-  margin-top: 50px;
-  width: 100vw;
+@media (max-width: 768px) {
+  .Project-grid {
+    grid-template-columns: repeat(
+      auto-fill,
+      minmax(200px, 1fr)
+    ); /* Adjust column size for smaller screens */
+    gap: 20px; /* Reduce gap between grid items */
+    padding: 2rem; /* Adjust padding for smaller screens */
+  }
 }
 
 .Project-grid {
@@ -222,6 +226,9 @@ iframe {
   gap: 60px;
   padding: 6rem 4rem;
   list-style: none;
+  /* Add flex properties to center grid items */
+  align-items: center;
+  justify-content: center;
 }
 
 .Project-grid li {
